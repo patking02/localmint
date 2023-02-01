@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=localmint
+POSTGRES_USER=LlmNfLNEXZeqslSTPGQhHotjeLDUIdMZ
+POSTGRES_PASSWORD=8Ws44cAnxXziC9xOBg4pcs47aih5cfWhC91P2IWo6VdpKos1fifWXKoZyWE5ltZa
