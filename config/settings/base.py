@@ -78,6 +78,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
+    "localmint.core",
     "localmint.users",
     # Your stuff: custom apps go here
 ]
