@@ -46,7 +46,7 @@
     // Uncomment the next line if you want to keep your containers running after VS Code shuts down.
     // "shutdownAction": "none",
     // Uncomment the next line to run commands after the container is created - for example installing git.
-    "postCreateCommand": "apt-get update && apt-get install -y git wget && wget https://github.com/dandavison/delta/releases/download/0.14.0/git-delta_0.14.0_amd64.deb -O delta.deb && dpkg -i delta.deb && rm delta.deb"
+    "postCreateCommand": "apt-get update && apt-get install -y git wget && wget https://github.com/dandavison/delta/releases/download/0.14.0/git-delta_0.14.0_amd64.deb -O delta.deb && dpkg -i delta.deb && rm delta.deb && export DATABASE_URL=postgres://$POSTGRES_USER:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DB && export CELERY_BROKER_URL=$REDIS_URL"
     // "postCreateCommand": "apt-get update && apt-get install -y git zsh wget && wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true"
     // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
     // "remoteUser": "vscode"
