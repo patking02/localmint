@@ -11,11 +11,7 @@ from django.urls import reverse
 from localmint.users.forms import UserAdminChangeForm
 from localmint.users.models import User
 from localmint.users.tests.factories import UserFactory
-from localmint.users.views import (
-    UserRedirectView,
-    UserUpdateView,
-    user_detail_view,
-)
+from localmint.users.views import UserRedirectView, UserUpdateView, user_detail_view
 
 pytestmark = pytest.mark.django_db
 
